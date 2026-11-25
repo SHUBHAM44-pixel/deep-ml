@@ -14,9 +14,6 @@ def label_encode_ordinal(values: list, order: list) -> list:
         dict[order[i]] = i
     t = []
     
-    y = 0
-    if len(set(order) - set(values)) != 0:
-        y = 1
     
     for i in range(len(values)):
         
